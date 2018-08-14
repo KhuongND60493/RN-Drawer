@@ -615,3 +615,35 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   }
 })
+
+
+// HOW TO USE
+//	import Drawer from 'react-native-drawer';
+// 	import OptionDrawers from 'react-native-drawer/OptionDrawers';
+//	import MyMainView from './MyMainView';
+//	import MyControlPanel from './ControlPanel';
+// render() {
+//   const controlPanel = <MyControlPanel closeDrawer={() => {
+//     this.drawer.close();
+//   }} />
+//   const option = {
+//     type: OptionDrawers.type.overlay,
+//     openDrawerOffset: 100,
+//     closedDrawerOffset: 0,
+//     panOpenMask: .5,
+//     panThreshold: .1,
+//     side: OptionDrawers.position.left,
+//     tapToClose: true,
+//   }
+//   return (
+//     <Drawer
+//       ref={c => this.drawer = c}
+//       {...option}
+//       content={controlPanel}
+//       styles={drawerStyles}
+
+//     >
+//       <MyMainView openDrawer={() => this.drawer.open()} />
+//     </Drawer>
+//   );
+// }
